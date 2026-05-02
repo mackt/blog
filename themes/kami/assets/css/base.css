@@ -1,0 +1,65 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Lock weight to 400/500 — no synthetic bold */
+strong, b { font-weight: 500; }
+em, i     { font-style: normal; }   /* kami: no italic anywhere */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--serif);
+  font-weight: 500;
+  color: var(--text);
+  margin: 1.5em 0 0.5em;
+}
+h1 { font-size: 36px; line-height: 1.15; }
+h2 { font-size: 24px; line-height: 1.25; }
+h3 { font-size: 18px; line-height: 1.30; }
+
+p { margin: 0 0 1em; }
+
+a {
+  color: var(--brand);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: color 0.15s ease;
+}
+a:hover { color: var(--brand-light); }
+
+ul, ol { padding-left: 1.5em; }
+ul li::marker { color: var(--brand); }
+
+blockquote {
+  margin: 1em 0;
+  padding: 4px 0 4px 14px;
+  border-left: 2px solid var(--brand);
+  color: var(--text-soft);
+}
+
+hr {
+  border: 0;
+  border-top: 0.5px solid var(--border);
+  margin: 2em 0;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+/* Selection */
+::selection {
+  background: var(--tag-bg);
+  color: var(--text);
+}
