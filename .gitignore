@@ -1,0 +1,5 @@
+.superpowers/
+.hugo_build.lock
+public/
+resources/
+.DS_Store
