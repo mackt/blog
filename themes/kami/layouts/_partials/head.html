@@ -1,0 +1,20 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+  {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+
+  {{ $css := slice
+      (resources.Get "css/tokens.css")
+      (resources.Get "css/base.css")
+      (resources.Get "css/layout.css")
+      | resources.Concat "css/main.bundle.css"
+      | resources.Minify
+      | resources.Fingerprint "sha256"
+  }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+  {{ if .OutputFormats.Get "RSS" }}
+    <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ "index.xml" | absURL }}">
+  {{ end }}
+</head>
