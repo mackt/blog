@@ -25,6 +25,7 @@
   --serif-en: "Charter", Georgia, Palatino, "Times New Roman", serif;
   --serif-cn: "Source Han Serif SC", "TsangerJinKai02",
               "Songti SC", "STSong", Georgia, serif;
+  --serif:    var(--serif-en);   /* default; overridden by html[lang] selectors below */
   --sans:     var(--serif);
   --mono:     "JetBrains Mono", "SF Mono", "Fira Code",
               Consolas, Monaco,
