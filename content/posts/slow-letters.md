@@ -1,6 +1,6 @@
 ---
 title: "关于一封慢信件的写法"
-date: 2026-05-03
+date: 2026-05-03T00:00:00+08:00
 draft: false
 tags: [craft, writing]
 ---
