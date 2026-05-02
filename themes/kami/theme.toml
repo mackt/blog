@@ -1,0 +1,12 @@
+name = "Kami"
+license = "MIT"
+licenselink = "https://github.com/mackt/kami-hugo/blob/main/LICENSE"
+description = "Editorial Hugo theme inspired by Kami's warm parchment + ink-blue print design language."
+homepage = "https://mack.ma"
+tags = ["blog", "minimal", "bilingual", "editorial", "serif"]
+features = ["dark mode", "i18n", "code highlighting", "rss"]
+min_version = "0.146.0"
+
+[author]
+  name = "Mack Ma"
+  homepage = "https://mack.ma"
