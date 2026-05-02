@@ -4,6 +4,7 @@
 
 baseURL = "https://mack.ma/"
 defaultContentLanguage = "zh-Hans"
+theme = "kami"
 
 enableRobotsTXT = true
 summaryLength = 0

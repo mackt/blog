@@ -1,2 +1,1 @@
-[[imports]]
-path = "github.com/jpanther/congo/v2"
+# Theme is loaded via hugo.toml `theme = "kami"`. No module imports.
