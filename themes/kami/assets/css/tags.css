@@ -1,0 +1,50 @@
+.tags-index {
+  max-width: var(--measure);
+  margin: 0 auto;
+}
+.tags-index__title {
+  font-size: 36px;
+  margin: 0 0 2rem;
+}
+.tags-index__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+}
+.tags-index__list li { font-size: 17px; }
+.tags-index__list a {
+  color: var(--text);
+  border-bottom: none;
+  font-weight: 500;
+}
+.tags-index__list a:hover { color: var(--brand); }
+.tags-index__count {
+  color: var(--text-meta);
+  font-family: var(--mono);
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.term-header { margin-bottom: 2rem; }
+.term-eyebrow {
+  font-family: var(--serif);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 0.5rem;
+}
+.term-name {
+  font-size: 36px;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+}
+.term-count {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-meta);
+}

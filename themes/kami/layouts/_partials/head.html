@@ -11,6 +11,7 @@
       (resources.Get "css/home.css")
       (resources.Get "css/article.css")
       (resources.Get "css/code.css")
+      (resources.Get "css/tags.css")
       | resources.Concat "css/main.bundle.css"
       | resources.Minify
       | resources.Fingerprint "sha256"
