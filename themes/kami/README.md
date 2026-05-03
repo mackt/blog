@@ -11,7 +11,7 @@ Built for long-form bilingual blogs.
 - Bilingual paired translations with per-article language switcher
 - Dark mode with localStorage persistence
 - Code highlighting in single-accent palette (Chroma)
-- Self-hosted serif fonts (no external requests)
+- System-font serif stack with Source Han Serif SC / Charter as preferred picks (no web fonts shipped — keeps the theme tiny and dependency-free)
 
 ## Requirements
 
