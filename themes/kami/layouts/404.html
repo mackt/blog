@@ -1,7 +1,0 @@
-{{ define "main" }}
-  <div class="error-page">
-    <h1>404</h1>
-    {{ $isZH := eq (lower .Site.Language.Lang) "zh-hans" }}
-    <p>{{ if $isZH }}找不到这一页。{{ else }}This page doesn't exist.{{ end }} <a href="{{ .Site.Home.RelPermalink }}">{{ if $isZH }}回到首页{{ else }}Back home{{ end }}</a></p>
-  </div>
-{{ end }}

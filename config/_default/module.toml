@@ -1,1 +1,2 @@
-# Theme is loaded via hugo.toml `theme = "kami"`. No module imports.
+[[imports]]
+  path = "github.com/mackt/hugo-theme-kami"

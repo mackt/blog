@@ -1,9 +1,0 @@
-<figure class="code-block" data-lang="{{ .Type }}">
-  <button class="copy-btn" type="button"
-          data-label="{{ i18n "copy_code" | default "Copy" }}"
-          data-done="{{ i18n "copy_done" | default "Copied" }}"
-          aria-label="{{ i18n "copy_code" | default "Copy" }}">
-    {{ i18n "copy_code" | default "Copy" }}
-  </button>
-  {{ highlight .Inner .Type .Options }}
-</figure>

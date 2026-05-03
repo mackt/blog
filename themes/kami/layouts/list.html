@@ -1,9 +1,0 @@
-{{ define "main" }}
-  <div class="home">
-    {{ $posts := where .Pages "Section" "posts" }}
-    {{ if not $posts }}
-      {{ $posts = .Pages }}
-    {{ end }}
-    {{ partial "post-list-by-year.html" $posts }}
-  </div>
-{{ end }}
