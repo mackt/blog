@@ -7,6 +7,11 @@ theme = "kami"
 enableRobotsTXT = true
 summaryLength = 0
 
+# Suppress auto-generated taxonomies we don't use (kami uses tags only)
+disableKinds = []
+[taxonomies]
+  tag = "tags"
+
 [pagination]
   pagerSize = 10
 
