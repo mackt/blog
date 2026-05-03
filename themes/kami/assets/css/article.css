@@ -103,3 +103,103 @@
   .article-toc summary { list-style: none; }
   .article-toc summary::-webkit-details-marker { display: none; }
 }
+
+/* Article footer */
+.article-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 0.5px solid var(--border);
+}
+
+.article-tags {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.article-tags__label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+.article-tags ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.article-tags a {
+  background: var(--tag-bg);
+  color: var(--brand);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 3px;
+  border-bottom: none;
+}
+
+.article-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  font-size: 14px;
+}
+.article-nav__cell--right { text-align: right; }
+.article-nav__link {
+  display: block;
+  border-bottom: none;
+  color: var(--text-soft);
+}
+.article-nav__link:hover { color: var(--brand); }
+.article-nav__link:hover .article-nav__title { color: var(--brand); }
+.article-nav__label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-meta);
+  margin-bottom: 4px;
+}
+.article-nav__title {
+  display: block;
+  color: var(--text);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* Footnotes (Goldmark output) */
+.article-body sup a,
+.footnote-ref a {
+  color: var(--brand);
+  border-bottom: none;
+  font-family: var(--mono);
+  font-size: 0.75em;
+  padding: 0 2px;
+}
+.footnotes {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 0.5px solid var(--border);
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-soft);
+}
+.footnotes ol { padding-left: 1.25rem; }
+.footnotes li { margin: 0.5rem 0; }
+.footnotes li::marker { color: var(--brand); }
+
+@media (max-width: 560px) {
+  .article-nav { grid-template-columns: 1fr; }
+  .article-nav__cell--right { text-align: left; }
+}

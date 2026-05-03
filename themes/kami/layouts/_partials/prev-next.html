@@ -1,0 +1,18 @@
+<nav class="article-nav">
+  <div class="article-nav__cell">
+    {{ with .PrevInSection }}
+      <a class="article-nav__link" href="{{ .RelPermalink }}">
+        <span class="article-nav__label">← {{ i18n "prev_post" | default "Previous" }}</span>
+        <span class="article-nav__title">{{ .Title }}</span>
+      </a>
+    {{ end }}
+  </div>
+  <div class="article-nav__cell article-nav__cell--right">
+    {{ with .NextInSection }}
+      <a class="article-nav__link" href="{{ .RelPermalink }}">
+        <span class="article-nav__label">{{ i18n "next_post" | default "Next" }} →</span>
+        <span class="article-nav__title">{{ .Title }}</span>
+      </a>
+    {{ end }}
+  </div>
+</nav>

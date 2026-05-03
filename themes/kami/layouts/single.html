@@ -14,6 +14,11 @@
       <div class="article-body">
         {{ .Content }}
       </div>
+
+      <footer class="article-footer">
+        {{ partial "tags-inline.html" . }}
+        {{ partial "prev-next.html" . }}
+      </footer>
     </article>
 
     {{ partial "toc.html" . }}
