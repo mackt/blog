@@ -69,3 +69,19 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--text-meta);
   margin-left: 1px;
 }
+
+.error-page {
+  max-width: var(--measure);
+  margin: 4rem auto;
+  text-align: center;
+}
+.error-page h1 {
+  font-size: 96px;
+  line-height: 1;
+  color: var(--brand);
+  margin: 0 0 1rem;
+}
+.error-page p {
+  font-size: 17px;
+  color: var(--text-soft);
+}
