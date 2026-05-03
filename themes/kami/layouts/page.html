@@ -7,5 +7,11 @@
     <div class="article-body">
       {{ .Content }}
     </div>
+
+    {{ if .Translations }}
+      <footer class="article-footer">
+        {{ partial "lang-switch.html" . }}
+      </footer>
+    {{ end }}
   </article>
 {{ end }}

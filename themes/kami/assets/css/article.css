@@ -203,3 +203,17 @@
   .article-nav { grid-template-columns: 1fr; }
   .article-nav__cell--right { text-align: left; }
 }
+
+.lang-switch {
+  margin: 0 0 2rem;
+  font-size: 13px;
+}
+.lang-switch a {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--brand);
+  border-bottom: none;
+}
+.lang-switch a:hover { color: var(--brand-light); }
