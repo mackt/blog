@@ -1,9 +1,0 @@
-locale = "en"
-label = "English"
-direction = "ltr"
-weight = 2
-
-title = "Mack's Blog"
-
-[params]
-  description = "Slow thinking — engineering, reading, life"
