@@ -17,6 +17,14 @@
   }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
+  {{ $js := slice
+      (resources.Get "js/toc.js")
+      | resources.Concat "js/main.bundle.js"
+      | resources.Minify
+      | resources.Fingerprint "sha256"
+  }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+
   {{ if .OutputFormats.Get "RSS" }}
     <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ "index.xml" | absURL }}">
   {{ end }}

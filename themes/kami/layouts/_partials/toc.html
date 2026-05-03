@@ -1,0 +1,9 @@
+{{ $toc := .TableOfContents }}
+{{ if strings.Contains (string $toc) "<li>" }}
+  <aside class="article-toc" aria-label="{{ i18n "toc_title" | default "Contents" }}">
+    <details open>
+      <summary>{{ i18n "toc_title" | default "Contents" }}</summary>
+      {{ $toc }}
+    </details>
+  </aside>
+{{ end }}

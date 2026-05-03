@@ -1,17 +1,21 @@
 {{ define "main" }}
-  <article class="article">
-    <header class="article-header">
-      {{ with index .Params.tags 0 }}
-        <div class="article-eyebrow">{{ . }}</div>
-      {{ end }}
-      <h1 class="article-title">{{ .Title }}</h1>
-      <div class="article-meta">
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006 · 01 · 02" }}</time>
-      </div>
-    </header>
+  <div class="article-grid">
+    <article class="article">
+      <header class="article-header">
+        {{ with index .Params.tags 0 }}
+          <div class="article-eyebrow">{{ . }}</div>
+        {{ end }}
+        <h1 class="article-title">{{ .Title }}</h1>
+        <div class="article-meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006 · 01 · 02" }}</time>
+        </div>
+      </header>
 
-    <div class="article-body">
-      {{ .Content }}
-    </div>
-  </article>
+      <div class="article-body">
+        {{ .Content }}
+      </div>
+    </article>
+
+    {{ partial "toc.html" . }}
+  </div>
 {{ end }}
