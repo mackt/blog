@@ -3,8 +3,8 @@ title: "关于"
 type: "page"
 ---
 
-我是 Mack。
+我是 Shengbin。
 
-这里写一些慢思考 — 关于工程、阅读，和如何认真过生活。每月一两篇，不刻意保持节奏。
+这里写一些思考 — 关于工程、数码，和如何生活。
 
-如果想联系我，写信到 [hi@mack.ma](mailto:hi@mack.ma)。
+如果想联系我，写信到 [hi@mashengbin.com](mailto:hi@mashengbin.com)。
