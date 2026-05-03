@@ -1,0 +1,13 @@
+{{- $src := .Get "src" | default (.Get 0) -}}
+{{- $alt := .Get "alt" | default (.Get 1) | default "" -}}
+{{- $caption := .Get "caption" -}}
+{{- $base := site.Params.imgCDN | default "" -}}
+{{- $url := cond (or (hasPrefix $src "http://") (hasPrefix $src "https://") (hasPrefix $src "/")) $src (printf "%s/%s" (strings.TrimRight "/" $base) $src) -}}
+{{- if $caption -}}
+<figure>
+  <img src="{{ $url }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+  <figcaption>{{ $caption }}</figcaption>
+</figure>
+{{- else -}}
+<img src="{{ $url }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+{{- end -}}

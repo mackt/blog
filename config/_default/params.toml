@@ -1,3 +1,5 @@
+imgCDN = "https://img.mashengbin.com"
+
 [author]
   name = "Shengbin Ma"
   email = "hi@mashengbin.com"
