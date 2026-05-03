@@ -83,3 +83,30 @@
 .highlight em,
 .highlight i,
 .highlight .ge { font-style: normal; }
+
+.code-block { position: relative; }
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--bg-sand);
+  color: var(--text-soft);
+  border: 0.5px solid var(--border);
+  border-radius: 3px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s ease, color 0.15s ease;
+}
+.code-block:hover .copy-btn,
+.copy-btn:focus { opacity: 1; }
+.copy-btn:hover { color: var(--brand); }
+.copy-btn--done { color: var(--brand); opacity: 1; }
+
+@media (hover: none) {
+  .copy-btn { opacity: 1; }
+}

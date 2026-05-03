@@ -27,6 +27,7 @@
 
   {{ $js := slice
       (resources.Get "js/toc.js")
+      (resources.Get "js/code-copy.js")
       | resources.Concat "js/main.bundle.js"
       | resources.Minify
       | resources.Fingerprint "sha256"
