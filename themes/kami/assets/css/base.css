@@ -63,3 +63,9 @@ img { max-width: 100%; height: auto; display: block; }
   background: var(--tag-bg);
   color: var(--text);
 }
+
+.external-marker {
+  font-size: 0.8em;
+  color: var(--text-meta);
+  margin-left: 1px;
+}
