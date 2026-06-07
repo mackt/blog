@@ -1,8 +1,8 @@
-imgCDN = "https://img.mashengbin.com"
+imgCDN = "https://img.mack.ma"
 
 [author]
-  name = "Shengbin Ma"
-  email = "hi@mashengbin.com"
+  name = "Mack"
+  email = "hi@mack.ma"
 
 [[author.links]]
   github = "https://github.com/mackt"
