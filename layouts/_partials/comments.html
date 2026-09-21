@@ -1,10 +1,15 @@
 {{- $g := site.Params.giscus -}}
 {{- if and $g $g.repo $g.repoId $g.categoryId (ne .Params.comments false) -}}
   {{- $lang := cond (hasPrefix site.Language.Lang "zh") "zh-CN" "en" -}}
+  {{- /* Theme is a giscus built-in name, or a site-relative path to a custom CSS file. */ -}}
+  {{- $light := $g.themeLight | default "light" -}}
+  {{- $dark := $g.themeDark | default "dark" -}}
+  {{- if hasPrefix $light "/" }}{{ $light = absURL $light }}{{ end -}}
+  {{- if hasPrefix $dark "/" }}{{ $dark = absURL $dark }}{{ end -}}
   <section class="comments" id="comments" style="margin-top: 3rem;">
     <script>
       (function () {
-        var themes = { light: {{ $g.themeLight | default "light" }}, dark: {{ $g.themeDark | default "dark" }} };
+        var themes = { light: {{ $light }}, dark: {{ $dark }} };
         var current = function () {
           return document.documentElement.getAttribute('data-theme') === 'dark' ? themes.dark : themes.light;
         };

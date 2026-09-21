@@ -1,0 +1,90 @@
+/* giscus theme for kami · shared typography and structure.
+   Loaded inside the giscus iframe via light.css / dark.css, which define the --k-* palette. */
+
+html, body {
+  background: var(--k-bg);
+}
+
+main {
+  font-family: "Source Han Serif SC", "Source Han Serif CN", "TsangerJinKai02",
+               "Noto Serif CJK SC", "Noto Serif SC",
+               "Songti SC", "STSong", Georgia, serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--k-text);
+}
+
+main code, main pre, main kbd {
+  font-family: "JetBrains Mono", "SF Mono", "Fira Code", Consolas, Monaco, monospace;
+}
+
+/* Header: reaction row + comment count */
+main .gsc-reactions-count,
+main .gsc-comments-count,
+main .gsc-replies-count {
+  font-weight: 400;
+  color: var(--k-text-soft);
+}
+
+main .gsc-comments-count { font-size: 14px; }
+
+/* Comments: flat, separated by hairlines instead of boxes */
+main .gsc-comment,
+main .gsc-comment > div,
+main .gsc-comment-box,
+main .gsc-reply-box,
+main .gsc-replies {
+  border-radius: 6px;
+}
+
+main .gsc-comment:not(.gsc-reply-box) .gsc-replies { border-radius: unset; }
+
+main .gsc-comment-box,
+main .gsc-comment-box-textarea,
+main .gsc-comment > div {
+  border-width: 0.5px;
+}
+
+main .gsc-comment-header,
+main .gsc-reply-header { font-size: 13px; }
+
+main .gsc-comment-author .link-primary { font-weight: 600; }
+
+main .gsc-comment-content { font-size: 15px; }
+
+main .gsc-comment-box-textarea {
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+main .gsc-comment-box-textarea::placeholder {
+  color: var(--k-text-meta);
+  opacity: 1;
+}
+
+main .gsc-comment-box-textarea:focus {
+  border-color: var(--k-brand);
+  box-shadow: none;
+}
+
+/* Buttons */
+main .btn {
+  font-family: inherit;
+  font-weight: 400;
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+/* Links in comment bodies follow the site's ink-blue accent */
+main .markdown a { color: var(--k-brand); }
+main .markdown a:hover { color: var(--k-brand-light); }
+
+main .markdown blockquote {
+  border-left: 2px solid var(--k-brand);
+  color: var(--k-text-soft);
+}
+
+/* Drop GitHub's mascot loader and dotted pagination line */
+main .gsc-loading-image { background-image: none; }
+main .pagination-loader-container { background-image: none; }

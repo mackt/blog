@@ -1,0 +1,108 @@
+@import "base.css";
+
+/* giscus theme for kami · dark. Palette mirrors the theme's tokens.css [data-theme="dark"]. */
+:root {
+  --k-bg: #141413;
+  --k-bg-lifted: #1f1e1c;
+  --k-bg-sand: #2a2926;
+  --k-bg-code: #252421;
+  --k-text: #ECEAE0;
+  --k-text-muted: #C9C6B8;
+  --k-text-soft: #9A968A;
+  --k-text-meta: #6b6a64;
+  --k-border: #2f2e2a;
+  --k-border-soft: #2a2926;
+  --k-brand: #5B8DCC;
+  --k-brand-light: #7AA5DD;
+  --k-tag-bg: #233447;
+}
+
+main {
+  color-scheme: dark;
+
+  --color-prettylights-syntax-comment: #9A968A;
+  --color-prettylights-syntax-constant: #7AA5DD;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #ECEAE0;
+  --color-prettylights-syntax-entity-tag: #7ee787;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa657;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-invalid-illegal-text: #ECEAE0;
+  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+  --color-prettylights-syntax-carriage-return-text: #ECEAE0;
+  --color-prettylights-syntax-carriage-return-bg: #b62324;
+  --color-prettylights-syntax-string-regexp: #7ee787;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #5B8DCC;
+  --color-prettylights-syntax-markup-italic: #ECEAE0;
+  --color-prettylights-syntax-markup-bold: #ECEAE0;
+  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+  --color-prettylights-syntax-markup-deleted-bg: #67060c;
+  --color-prettylights-syntax-markup-inserted-text: #aff5b4;
+  --color-prettylights-syntax-markup-inserted-bg: #033a16;
+  --color-prettylights-syntax-markup-changed-text: #ffdfb6;
+  --color-prettylights-syntax-markup-changed-bg: #5a1e02;
+  --color-prettylights-syntax-markup-ignored-text: #C9C6B8;
+  --color-prettylights-syntax-markup-ignored-bg: #233447;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #9A968A;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #6b6a64;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+
+  --color-btn-text: var(--k-text);
+  --color-btn-bg: var(--k-bg-lifted);
+  --color-btn-border: var(--k-border);
+  --color-btn-shadow: 0 0 transparent;
+  --color-btn-inset-shadow: 0 0 transparent;
+  --color-btn-hover-bg: var(--k-bg-sand);
+  --color-btn-hover-border: var(--k-text-meta);
+  --color-btn-active-bg: var(--k-bg-sand);
+  --color-btn-active-border: var(--k-text-meta);
+  --color-btn-selected-bg: var(--k-bg-sand);
+  --color-btn-primary-text: #141413;
+  --color-btn-primary-bg: var(--k-brand);
+  --color-btn-primary-border: var(--k-brand);
+  --color-btn-primary-shadow: 0 0 transparent;
+  --color-btn-primary-inset-shadow: 0 0 transparent;
+  --color-btn-primary-hover-bg: var(--k-brand-light);
+  --color-btn-primary-hover-border: var(--k-brand-light);
+  --color-btn-primary-selected-bg: var(--k-brand);
+  --color-btn-primary-selected-shadow: 0 0 transparent;
+  --color-btn-primary-disabled-text: #141413cc;
+  --color-btn-primary-disabled-bg: #5B8DCC80;
+  --color-btn-primary-disabled-border: transparent;
+  --color-action-list-item-default-hover-bg: #2a292680;
+  --color-segmented-control-bg: var(--k-bg-sand);
+  --color-segmented-control-button-bg: var(--k-bg-lifted);
+  --color-segmented-control-button-selected-border: var(--k-border);
+
+  --color-fg-default: var(--k-text);
+  --color-fg-muted: var(--k-text-soft);
+  --color-fg-subtle: var(--k-text-meta);
+  --color-canvas-default: var(--k-bg-lifted);
+  --color-canvas-overlay: var(--k-bg-lifted);
+  --color-canvas-inset: var(--k-bg);
+  --color-canvas-subtle: var(--k-bg-code);
+  --color-border-default: var(--k-border);
+  --color-border-muted: var(--k-border-soft);
+  --color-neutral-muted: #2f2e2a99;
+  --color-accent-fg: var(--k-brand);
+  --color-accent-emphasis: var(--k-brand);
+  --color-accent-muted: #5B8DCC66;
+  --color-accent-subtle: var(--k-tag-bg);
+  --color-success-fg: #7ee787;
+  --color-attention-fg: #d29922;
+  --color-attention-muted: #bb800966;
+  --color-attention-subtle: #3a2f14;
+  --color-danger-fg: #ff7b72;
+  --color-danger-muted: #f8514966;
+  --color-danger-subtle: #3d1a18;
+  --color-primer-shadow-inset: 0 0 transparent;
+  --color-scale-gray-1: var(--k-bg-sand);
+  --color-scale-blue-1: var(--k-tag-bg);
+
+  --color-social-reaction-bg-hover: var(--color-scale-gray-1);
+  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-1);
+}

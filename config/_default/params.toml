@@ -7,6 +7,8 @@ imgCDN = "https://img.mack.ma"
   repoId = "R_kgDOPTn8nQ"
   category = "Announcements"
   categoryId = "DIC_kwDOPTn8nc4DGGjd"
+  themeLight = "/giscus/light.css"
+  themeDark = "/giscus/dark.css"
 
 [author]
   name = "Mack"
