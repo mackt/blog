@@ -1,5 +1,13 @@
 imgCDN = "https://img.mack.ma"
 
+# Comments via giscus (https://giscus.app). Left blank = comments disabled.
+# Per-post opt-out: `comments: false` in front matter.
+[giscus]
+  repo = "mackt/blog"
+  repoId = "R_kgDOPTn8nQ"
+  category = "Announcements"
+  categoryId = "DIC_kwDOPTn8nc4DGGjd"
+
 [author]
   name = "Mack"
   email = "hi@mack.ma"
